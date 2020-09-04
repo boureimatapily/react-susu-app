@@ -23,7 +23,6 @@ function App() {
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/doctorlogin" component={DoctorLogin} />
-
         <Route exact path="/editgroup/:id" component={EditGroup} />
         <Route exact path="/singlesusu/:id" component={EditSusuType} />
       </Switch>
