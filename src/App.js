@@ -8,7 +8,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import Login from "./Pages/Login";
 
 
-
 import EditGroup from "./Components/Susu/Susu_Group/EditGroup";
 import EditSusuType from "./Components/Susu/Susu_frequency/EditSusuType";
 
