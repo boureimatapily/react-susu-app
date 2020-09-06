@@ -91,11 +91,11 @@ class EditGroup extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <div className="col-sm-12 col-xs-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
             <h1>ADD YOUR SUSU PAYMENT FREQUENCY</h1>
             <AddSusuType  groupId={groupId} />
           </div>
-          <div className="col-sm-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <div className="col-sm-12 col-xs-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <h1>ALL YOUR SUSU</h1>
           <SusuTypeList groupId={groupId}  />
 

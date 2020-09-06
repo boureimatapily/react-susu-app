@@ -43,6 +43,7 @@ class AddGroup extends React.Component {
                     type="text"
                     id="groupName"
                     name="groupName"
+                    placeholder="Enter Group Name"
                     className="form-control inputsStyle"
                   />
                 </div>
@@ -51,7 +52,7 @@ class AddGroup extends React.Component {
                     type="submit"
                     className="btn btn-primary my-3 navTabsBtn"
                   >
-                    ADD Susu Group
+                    ADD GROUP
                   </button>
                 </div>
               </div>

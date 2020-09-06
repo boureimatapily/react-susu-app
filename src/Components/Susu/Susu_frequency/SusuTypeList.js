@@ -44,7 +44,7 @@ class SusuTypeList extends React.Component {
                   {/* <th scope="col">Date</th> */}
                   <th scope="col">Type</th>
                   <th scope="col">Name</th>
-                  <th scope="col">Dialy Susu</th>
+                  <th scope="col">Date</th>
                 </tr>
               </thead>
               <tbody>

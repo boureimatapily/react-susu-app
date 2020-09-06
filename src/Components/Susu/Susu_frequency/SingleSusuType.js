@@ -2,7 +2,6 @@ import React from "react";
 // import moment from "moment";
 import trash from "../../../Images/icons/trash-fill.svg";
 import pencil from "../../../Images/icons/pencil.svg";
-import "../../Hospital/Patient/patient.css";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { deleteSusuType } from "../../../Redux/Actions/UserActions";
