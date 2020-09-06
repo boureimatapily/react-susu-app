@@ -15,6 +15,26 @@ import {
   UPLOAD_FILE_ERR
 } from "../Type";
 
+
+//Delete Susu Payment
+export const deleteSusuPayement = (account) => {
+  return (dispatch, getState, { getFirebase }) => {
+    const firestore = getFirebase().firestore();
+    // const id = account.userId;
+    firestore
+      .collection("susupayment")
+      .doc(account.id)
+      .delete()
+      .then(() => {
+        dispatch({ type: DELETE_USER });
+      })
+      .catch((err) => {
+        dispatch({ type: DELETE_USER_ERR, err });
+        console.log(err);
+      });
+  };
+};
+
 //Add new Susu Payment
 export const addSusuTypePayment = (id,account) => {
   return (dispatch, getState, { getFirebase }) => {
