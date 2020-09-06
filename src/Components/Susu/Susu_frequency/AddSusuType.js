@@ -40,7 +40,7 @@ class AddSusuType extends React.Component {
             <form onSubmit={this.handleSubmit}>
               <div className="row">
                 <div className="form-group col mb-2">
-                  <label htmlFor="type" className="form-label mr-3">
+                  <label htmlFor="type" className="form-label mr-3 inputslabelStyle">
                     Susu Type
                   </label>
                   <select
@@ -51,11 +51,11 @@ class AddSusuType extends React.Component {
                     onChange={this.handleChange}
                   >
                     <option defaultValue>Choose Your Susu Type</option>
-                    <option value="Dialy Susu">Dialy Susu</option>
-                    <option value="Weekly Susu"> Weekly Susu</option>
-                    <option value="Monthly Susu"> Monthly Susu</option>
-                    <option value="Quarterly Susu"> Quarterly Susu</option>
-                    <option value="Quarterly Susu"> Other type</option>
+                    <option value="Dialy susu">Dialy susu</option>
+                    <option value="Weekly susu"> Weekly susu</option>
+                    <option value="Monthly susu"> Monthly susu</option>
+                    <option value="Quarterly susu"> Quarterly susu</option>
+                    <option value="Quarterly susu"> Other type</option>
                     <option value="Hospital"></option>
                   </select>
                 </div>
@@ -63,7 +63,7 @@ class AddSusuType extends React.Component {
               <div className="row">
                 <div className="form-group col mb-2">
                   <label htmlFor="dialyDate" className="inputslabelStyle">
-                    Choose your Susu Day (Only if Dialy Susu)
+                    Choose your Susu Date
                   </label>
                   <input
                     value={this.state.dialyDate}
