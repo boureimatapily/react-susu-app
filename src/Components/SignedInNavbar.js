@@ -7,7 +7,7 @@ import { logout } from "../Redux/Actions/authActions";
 function SignedInNavbar({logout}) {
 
     return (
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col">
             <nav className="navbar navbar-expand-lg navbar-light NavColor">

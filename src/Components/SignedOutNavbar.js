@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function SignedOutNavbar() {
   
     return (
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col">
             <nav className="navbar navbar-expand-lg navbar-light NavColor">
@@ -51,6 +51,11 @@ function SignedOutNavbar() {
                     <li className="nav-item whiteColor ">
                       <Link to="/login" className="NavBtnLink">
                         Login
+                      </Link>
+                    </li>
+                    <li className="nav-item whiteColor ">
+                      <Link to="/signup" className="NavBtnLink">
+                        Sign up
                       </Link>
                     </li>
                    
