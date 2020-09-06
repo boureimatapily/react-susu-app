@@ -36,15 +36,15 @@ class Login extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col d-none d-md-block justify-content-center align-items-center">
-            <h1 className="text-center mt-3">ADD UNLIMITED SUSU GROUP FOR FREE</h1>
+            <h1 className="text-center mt-3">ENJOY YOUR FREE SUSU APP</h1>
           <img
               src={require("../Images/credit.png")}
               alt="covid"
-              id="creditImg"
-              className="d-none d-md-block"
+              id="loginImg"
+              className="d-none d-md-block loginImg"
             />
           </div>
-          <div className="col   justify-content-center align-items-center">
+          <div className="col mt-3  justify-content-center align-items-center">
             <h1 className="text-center"> Login Page</h1>
             <form onSubmit={this.handleSubmit} id="form">
               <div className="mb-3">
