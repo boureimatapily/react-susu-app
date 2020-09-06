@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { addSusuTypePayment } from "../../../Redux/Actions/UserActions";
+import { Link } from "react-router-dom";
 
 class AddPayment extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class AddPayment extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const { fullname, amount } = this.state;
-    const{ groupId} = this.props;
+    const { groupId } = this.props;
     const newSusuType = {
       fullname: fullname,
       amount: amount,
@@ -29,11 +30,16 @@ class AddPayment extends React.Component {
     this.props.addSusuTypePayment(groupId, newSusuType);
     this.setState({ fullname: "", amount: "", otherType: "" });
   };
+
   render() {
     return (
       <div className="container">
         <div className="row">
-          <div className="col card">
+          <Link to="/">
+            <button className="btn btn-success navTabsBtn mt-3">Go Back</button>
+          </Link>
+
+          <div className="col card mt-3 ">
             <form onSubmit={this.handleSubmit}>
               <div className="row">
                 <div className="form-group col mb-2">
@@ -74,7 +80,6 @@ class AddPayment extends React.Component {
             </form>
           </div>
         </div>
-        
       </div>
     );
   }

@@ -17,7 +17,7 @@ class SusuPaymentList extends React.Component {
       .collection("susupayment") //access "items" collection
       .where("authorId", "==", uid)
       .where("paymentId", "==", groupId)
-      .where("sId", "==", groupId)
+      // .where("sId", "==", groupId)
       .onSnapshot((snapshot) => {
         //You can "listen" to a document with the onSnapshot() method.
         const listItems = snapshot.docs.map((doc) => ({
@@ -64,7 +64,7 @@ class SusuPaymentList extends React.Component {
 
 const mStp = (state) => {
   const uid = state.firebase.auth.uid;
-  
+  console.log(state)
   return {
     uid: uid,
   };
