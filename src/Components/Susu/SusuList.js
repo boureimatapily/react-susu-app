@@ -37,7 +37,7 @@ class SusuList extends Component {
     return (
       <div className="container">
         <div className="row">
-        <h1 className="mt-3 text-center">ALL Your Susu Group</h1>
+        <h1 className="mt-3 text-center"> ALL YOUR SUSU GROUP</h1>
           <div className="col d-flex flex-row flex-wrap">
             { susulist &&
                susulist.map(( susu) => (
