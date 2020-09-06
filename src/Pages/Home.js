@@ -32,7 +32,7 @@ class Home extends Component {
                   Login
                 </button>
               </Link>
-              <Link to="/signup" className="ml-5">
+              <Link to="/signup" className="ml-2">
                 <button
                   type="submit"
                   className="btn btn-primary navTabsBtnlogin homeBtnstart "
