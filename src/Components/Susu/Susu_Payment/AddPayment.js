@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { addSusuTypePayment } from "../../../Redux/Actions/UserActions";
-import { Link } from "react-router-dom";
+
 
 class AddPayment extends React.Component {
   constructor(props) {
