@@ -2,6 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { addSusuTypePayment } from "../../../Redux/Actions/UserActions";
 
+import { Link } from "react-router-dom";
+
 
 class AddPayment extends React.Component {
   constructor(props) {
@@ -35,9 +37,10 @@ class AddPayment extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          
-            <button className="btn btn-success navTabsBtn mt-3" onClick={this.props.history.goBack}>Go Back</button>
-         
+          <Link to="/">
+
+            <button className="btn btn-success navTabsBtn mt-3">Go Back</button>
+          </Link>
 
           <div className="col card mt-3 ">
             <form onSubmit={this.handleSubmit}>
