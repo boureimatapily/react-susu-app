@@ -35,9 +35,9 @@ class AddPayment extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <Link to="/">
-            <button className="btn btn-success navTabsBtn mt-3">Go Back</button>
-          </Link>
+          
+            <button className="btn btn-success navTabsBtn mt-3" onClick={this.props.history.goBack}>Go Back</button>
+         
 
           <div className="col card mt-3 ">
             <form onSubmit={this.handleSubmit}>
